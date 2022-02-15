@@ -1,0 +1,203 @@
+
+/* ---------------------Style the Main navigation bar -----------------*/
+
+* {box-sizing : border-box}
+
+/*Making the MAIN NAVIGATION BAR visible and fixed  during the scrollong down*/
+.mainNav-container
+{
+  position : sticky ;
+  top : 0 ;
+}
+
+/* Adding a dark brown background color to the main navigation */
+.mainNavBar
+{
+  background-color : #231F20 ;
+  border-radius : 0 ;
+  overflow : hidden;
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainNavBar-left-1
+{
+  background-color : #231F20 ;
+  border-radius : 0 ;
+  overflow : hidden;
+  float : left ;
+  height : 60px ;
+  width : 65px ;
+  margin : 0 -3px 0 0 ;
+}
+
+/* Styling the links inside the Main Navbar  */
+.mainNavBar a
+{
+  float : left;
+  text-align : center;
+  padding : 14px 16PX;
+  position : relative ;
+  color : #C0C0C0 ;
+  text-decoration : none;
+  font-size : 17px;
+  border-bottom: 3px solid transparent;
+}
+
+/* Changing the Main Navbar links with the HOVER effect */
+.mainNavBar-center a:hover
+ {
+  color : #F7D7B5 ;
+  border-bottom : 3px solid #F7D7B5 ; /*Bottom Border Nav Link*/
+ }
+
+/* Current/active Main navbar link */
+.mainNavBar-center a:active 
+{
+  color : #F7D7B5;
+  border-bottom : 3px solid #F7D7B5 ;
+}
+
+
+/* ----- attributes of the MAIN NAV BAR additional icons which are at right hand side top ----- */
+
+ul.mainNavBar-right-icons
+{
+  margin : 5PX;
+  padding : 0 0 0 ;
+}
+
+ul.mainNavBar-right-icons li
+{
+  background : #6D6E71;
+  width : 40px;
+  height : 40px;
+  border : 1px solid #6D6E71;
+  border-radius : 4px;
+  margin : 3px;
+  text-align : center; 
+  display : inline-block;
+
+}
+
+/* removing the list bullets */
+ul.mainNavBar-right-icons li
+{ 
+  padding: 0 0 0 ;  
+  list-style-type: none; 
+  position: relative;
+  
+} 
+
+/* color of the icon border without the hover */
+ul.mainNavBar-right-icons li a
+{
+  color : #6D6E71;
+  font-size : 15px;
+  line-height : 30px ;
+}
+
+/* color change of the icon border WITH the hover */
+ul.mainNavBar-right-icons li a:hover
+{
+  color : #F7D7B5 ;
+}
+
+
+/* Right-aligned section inside the top navigation */
+.mainNavBar-right 
+{
+  float : right;
+}
+
+
+/* Styling the Right-aligned section inside the top navigation */
+.mainNavBar-right a
+{
+padding: 1px 1PX;
+position: relative ;
+color : #C0C0C0 ;
+}
+
+
+/* ----- attributes of the MAIN NAV BAR LOGO which is at left top corner ----- */
+
+ul.mainNavBar-left-logo
+{
+  margin : 0 ;
+  padding : 0 0 0 ;
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul.mainNavBar-left-logo li
+{
+  width : 250px;
+  height : 100px;
+  border-radius : 0 ;
+  margin : 1px ;
+  display : inline-block;
+
+}
+
+/* removing the list bullets */
+ul.mainNavBar-left-logo li
+{ 
+  list-style-type: none; 
+  position: relative;
+  
+} 
+
+/* color of the icon border without the hover */
+ul.mainNavBar-left-logo li a
+{
+  color : #6D6E71;
+  font-size : 15px;
+  line-height : 30px ;
+}
+
+/* color change of the icon border WITH the hover */
+ul.mainNavBar-left-logo li a:hover
+{
+  color : #F7D7B5 ;
+}
+
+
+/* Right-aligned section inside the top navigation */
+.mainNavBar-left
+{
+  float : left;
+}
+
+
+/*Styling the left-aligned section inside the top navigation */
+.mainNavBar-left a
+{
+padding: 1px 1px 1px;
+position: relative ;
+}
+
+
+/* Adding responsiveness - This will automatically display the Main navbar vertically instead of horizontally on screens less than 500 pixels */
+ @media screen and (max-width: 700px) 
+{
+  .mainNavBar a 
+  {float: none;display: block; } /* Make the links appear below each other */
+  .mainNavBar-left-1 { display: none;}
+  .mainNavBar-left{ display: none;}
+  .mainNavBar-center{ display: block ;}
+  .mainNavBar-right{ display: block ;}
+  .mainNav-container {position : relative ; display: block ;}
+   
+  }
+
+
+}
+
+

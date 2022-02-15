@@ -1,0 +1,285 @@
+
+* {box-sizing : border-box}
+
+/* --------------------------------------Styling the footer area ------------------------------------*/
+
+/* Styling the SUBSCRIBE area */
+
+.footer-subscribe-form
+{
+  background-color : #008080 ; /* Making the background color to TEAL */
+  border : 5px solid #008080 ; /* Making the border color to TEAL */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  padding : 10px 0 2px ; /* Adding padding to the TOP SIDES BOTTOM respectively*/
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-subscribe
+{
+  background-color : #008080;
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  font-size : 20px ; /* font size */
+  color : #FFFFFF ; /* font color */
+  padding : 20px 200px 50px ; /* Adding padding to the TOP SIDES BOTTOM respectively*/
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type = email ] 
+  {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #FFFFFF;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size : 20px ;
+    color : #0000FF ;
+  }
+
+/* Styling the SUBSCRIBE button without the hover effect */
+
+#footer-subscribe
+{
+  border : 2px solid #008080 ;/* Setting a TEAL color to the borders */
+  outline : none; /* Removing outline */
+  background-color : #008080 ; /* Setting up a TEAL background color */
+  color : #FFFFFF ; /* Text color */
+  cursor: pointer; /* Adding  a mouse pointer on hover */
+  padding : 12px 20px;  /* Adding some padding */
+  font-size: 18px; /*  font size */
+  font-weight : bold ; /* bold font */
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Styling the SUBSCRIBE button WITH the hover effect */
+
+#footer-subscribe:hover 
+{
+  background-color: #FFFFFF ; /* Making the background color to WHITE on hover */
+  border : 2px solid #008080 ;/* Setting a TEAL color to the borders */
+  color : #008080 ; /* Text color is changed to TEAL during the hover */
+} 
+
+.footer-subscribe-form
+{
+  background-color : #FFFFFF ;
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* attributes of the class in which the col is contained */   
+.footer-class
+{
+  border-radius : 5px ; 
+  background : #231F20 ;
+  padding : 10px ;
+  float : left ;
+  width : 100% ;
+}
+
+/* seperating the col into 4 segments */
+
+.col 
+{
+  float: left;
+   width: 25%; 
+   margin-top: 6px; 
+   padding: 20px;
+  }
+
+img.footer-logo
+{
+  margin-bottom:20px;
+}
+
+
+/* ----- attributes of the icons ----- */
+
+ul.social-icons
+{
+margin:0;
+padding: 0;
+
+/* Center and scale the image properly */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ul.social-icons li
+{
+  background:#6D6E71;
+  width:47px;
+  height:47px;
+  border:1px solid #6D6E71;
+  border-radius:4px;
+  margin:3px;
+  text-align:center; 
+  display: inline-block;
+}
+
+/* color of the icon border without the hover */
+ul.social-icons li a
+{
+  color : #6D6E71;
+  font-size : 15px;
+  line-height : 30px ;
+}
+
+/* color change of the icon border WITH the hover */
+ul.social-icons li a:hover
+{
+  color : #F7D7B5 ;
+}
+
+/* removing the list bullets */
+ul.footer-links 
+{ 
+  padding: 0;  
+  list-style-type: none; 
+  position: relative;
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} 
+
+/* setting the gap between two hyperlinks */
+ul.footer-links li
+{
+  line-height:35px;
+   padding-left: 15px; 
+} 
+
+/* color of the hyperlinks without the hover and removing the UNDERLINE that was assigned by <a href> */
+ul.footer-links li a
+{
+  color:#6D6E71;
+  text-decoration: none;
+} 
+
+/* color of the hyperlinks WITH the hover */
+ul.footer-links li a:hover
+{
+  color : #F7D7B5; 
+}
+
+            
+/* attributes of the class in which the copyright section */
+.copyright
+{ 
+  border-radius: 5px ; 
+  background : #231F20; 
+  text-align:center;
+  color:#FFFFFF ;
+  padding : 12px 12px 12px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+      
+
+
+/* converting a link into a button and Styling the GO TO TOP BUTTON */
+
+.link-page a
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-weight : none;
+  font-size: 17px ;
+  padding : 12px 20px;
+  border : 2px solid #008080;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration : none ;
+}
+
+/* Hovering effect on the buttons */
+
+.link-page a:hover 
+{
+  background-color : #FFFFFF;
+  color : #008080;
+  border : 2px solid #008080 ;
+}
+
+/* ----- Attributes of the FOOTER LOGO which is at the BOTTOM RIGHT CORNER ----- */
+
+ul.footer-bottom-right-logo
+{
+  margin : 0 ;
+  padding : 0 0 0 ;
+
+  /* Center and scale the image properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul.footer-bottom-right-logo li
+{
+  width : 250px;
+  height : 100px;
+  border-radius : 0 ;
+  margin : 1px ;
+  display : inline-block;
+
+}
+
+/* removing the list bullets */
+ul.footer-bottom-right-logo li
+{ 
+  list-style-type: none; 
+  position: relative;
+  
+} 
+
+/* color of the icon border without the hover */
+ul.footer-bottom-right-logo li a
+{
+  color : #6D6E71;
+  font-size : 15px;
+  line-height : 30px ;
+}
+
+/* color change of the icon border WITH the hover */
+ul.footer-bottom-right-logo li a:hover
+{
+  color : #F7D7B5 ;
+}
+
+@media screen and (max-width: 700px) 
+{
+  body {font-size : 10px ;}
+  .card {font-size : 10px ;}
+  .indigenous-feline-column {width: 100%; nfloat: none; display: block;}
+  .footer-subscribe{font-size : 12px ; padding : 20px 30px 50px ; } 
+  .footer-bottom-right {display : none;}
+  
+}
+
+@media screen and (max-width: 1200px) 
+{
+  .footer-bottom-right {display : none;}
+  
+}

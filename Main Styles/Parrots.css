@@ -1,0 +1,149 @@
+
+* {box-sizing : border-box}
+
+/* Styling the headlines */
+
+h1 , h2 
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #F7D7B5 ;
+    margin: 0.5em 0;
+  }
+
+  h3
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #008080 ;
+    margin: 0.5em 0;
+  }
+
+  h4
+  {
+    font-family : Helvetica, Arial, sans-serif;
+    color : #800000 ;
+    margin: 0.5em 0;
+  }
+  
+  .container-parrots
+  {
+   border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+   background : #3D453E ;
+   color : #F7D7B5 ;
+   font-size : 20px ;
+   padding: 10px 100px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+   text-align: justify;
+ }
+
+/* Styling the body */
+body 
+{
+  font-family : Helvetica, Arial, sans-serif;
+  background-color :  #231F20 ;
+  text-align: justify;
+}
+
+
+/*----------- Styling the parrot container ------------ */
+
+/* Remove extra left and right margins, due to padding in columns */
+.parrot-container
+{
+  background-color : #FFFFFF ;
+  padding : 50px 20px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+}
+
+.parrot-para
+{
+  text-align: justify;
+}
+
+/* Styling the history-card */
+.parrot-card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  text-align : center ; /* Making the text alignment to CENTER */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  color : #008080 ; /* Text color is TEAL  */
+  font-size : 18px ; /* Text size  */
+}
+
+.parrot-card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 2.5); /* changing the boder shadow on hover */
+}
+
+/* Styling the 36 pictures of the parrots as the main content */
+
+/* Float three columns side by side */
+.parrots-column 
+{
+  float: left;
+  width: 32%;
+  padding: 0 5px 0 ;
+  text-align: justify;
+}
+
+
+/* Remove extra left and right margins, due to padding in columns */
+.parrots-row 
+{
+  margin : 0 -5px;
+  background-color : #FFFFFF ;
+  padding : 20px 20px 20px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+
+}
+
+/* Clear floats after the columns */
+.parrots-row:after
+ {
+  content : "" ;
+  display : table ;
+  clear : both ;
+}
+
+/* Style the cards */
+.card 
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* adding the "card" effect */
+  padding : 10px 25px 10px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  background-color : #F1F1F1 ; /* Making the background color light grey */
+  text-align : center ; /* Making the text alignment to CENTER */
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  color : #008080 ; /* Text color is TEAL  */
+  font-size : 15px ; /* Text size  */
+  text-align: justify;
+  
+}
+
+.card:hover
+{
+  box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 2.5); /* changing the boder shadow on hover */
+}
+
+.container2
+ {
+  border-radius : 5px ; /* Making the border edges tapered to a 5px radius */
+  background : #3D453E ;
+  color : #F7D7B5 ;
+  font-size : 20px ;
+  padding : 50px 100px 50px ;/* Adding padding to the TOP SIDES BOTTOM respectively*/
+  text-align: justify;
+}
+
+
+
+@media screen and (max-width: 700px) 
+{
+  .parrots-column {width : 100% ;}
+  .container2 {font-size : 10px ; padding : 5px 10px 5px ;}
+  .container-parrots {font-size : 10px ; padding : 5px 10px 5px ;}
+  .parrot-container {font-size : 10px ; padding : 5px 10px 5px ;}
+  .parrot-para {font-size : 15px ; padding : 5px 10px 5px ;}
+  .card {font-size : 12px ;}
+  body {font-size : 12px ;}
+  
+}
